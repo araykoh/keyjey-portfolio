@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kia Janeah Caliguiran — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- cover / landing page -->
+<section id="cover" class="cover">
+  <header class="cover-header">
+    <div class="logo">KJC<span class="dot">.</span></div>
+    <button class="btn-portfolio" id="enterPortfolioBtn">
+      <span class="btn-label">My Portfolio</span>
+      <span class="btn-spinner" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="cover-photo" aria-hidden="true">
+    <video autoplay muted loop playsinline id="bg-video">
+    <source src="video bg.mp4" type="video/mp4">
+  </video>
+  </div>
+
+</section>
+
+<!-- portfolio app -->
+<div id="app" class="app">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="logo">KJC<span class="dot">.</span></div>
+    </div>
+
+    <nav class="side-nav" id="sideNav">
+      <button class="nav-pill active" data-target="about">About</button>
+      <button class="nav-pill" data-target="strengths">Strengths</button>
+      <button class="nav-pill" data-target="projects">Projects</button>
+      <button class="nav-pill" data-target="contact">Contact</button>
+    </nav>
+
+  </aside>
+
+  <main class="content" id="content">
+
+    <!-- about -->
+    <section id="about" class="panel panel--dark">
+      <div class="panel-inner about-grid">
+        <div class="about-text">
+          <h2 class="mega">HI,<br>MY NAME IS<br>KIA<br>JANEAH<br><span class="accent-pink">CALIGUIRAN</span></h2>
+          <p class="body-copy">
+            I'm a student at the Cagayan State University, pursuing a degree in Information Technology Major in Web Development. 
+            I am dedicated to learning and growing as a developer, and I am always looking for new challenges to tackle.
+            I am constantly seeking to improve my skills. My goal is to combine my technical skills with my creative abilities
+           to develop innovative solutions that make a positive impact on people's lives.
+          </p>
+        </div>
+        <div class="about-photo-wrap">
+          <div class="about-photo">
+            <img src="about me.png" alt="picture">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- strengths -->
+    <section id="strengths" class="panel panel--dark">
+      <div class="panel-inner">
+        <h2 class="section-title">Strengths</h2>
+        <div class="card-list">
+          <article class="info-card">
+            <div class="info-thumb thumb-1"></div>
+            <div class="info-copy">
+              <h3>Web Development</h3>
+              <p>I have web development skills that allows me to create, design, and maintain responsive and user-friendly websites.</p>
+            </div>
+          </article>
+          <article class="info-card">
+            <div class="info-thumb thumb-2"></div>
+            <div class="info-copy">
+              <h3>Database</h3>
+              <p>I have database management skills that enable me to organize, store, and manage data efficiently.</p>
+            </div>
+          </article>
+          <article class="info-card">
+            <div class="info-thumb thumb-3"></div>
+            <div class="info-copy">
+              <h3>Critical Thinking</h3>
+              <p>I have strong communication skills that help me analyze problems, evaluate different solutions, and make informed decisions.</p>
+            </div>
+          </article>
+          <article class="info-card">
+            <div class="info-thumb thumb-4"></div>
+            <div class="info-copy">
+              <h3>Teamwork</h3>
+              <p>I have strong teamwork skills that enable me to work effectively with others to achieve common goals.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="panel panel--dark">
+      <div class="panel-inner">
+        <h2 class="section-title section-title--cream">Projects</h2>
+        <div class="carousel" data-carousel>
+          <button class="car-arrow car-arrow--left" aria-label="Previous">‹</button>
+          <div class="carousel-track">
+            <article class="feature-card" data-zoomable>
+              <div class="feature-media thumb-portrait-1">
+                <img src="system.png" alt="System Design">
+              </div>
+              <div class="feature-copy">
+                <p class="quote">This project was made in our Object Oriented Programming class. It is designed to track and manage employees leave.</p>
+                <p class="cite"><strong>Leave Management System</strong></p>
+              </div>
+            </article>
+            <article class="feature-card" data-zoomable>
+              <div class="feature-media thumb-portrait-2">
+                <img src="calendar.png" alt="Calendar Design">
+              </div>
+              <div class="feature-copy">
+                <p class="quote">This project was made in our Web Development class. It is one of my requirements to design a functional calendar website.</p>
+                <p class="cite"><strong>Calendar Website</strong></p>
+              </div>
+            </article>
+            <article class="feature-card" data-zoomable>
+              <div class="feature-media thumb-portrait-3">
+                <img src="magazine.png" alt="Magazine Design">
+              </div>
+              <div class="feature-copy">
+                <p class="quote">This project was made in our Multimedia Systems class. It is a digital magazine layout showcasing various design elements.</p>
+                <p class="cite"><strong>Magazine</strong></p>
+              </div>
+            </article>
+            <article class="feature-card" data-zoomable>
+              <div class="feature-media thumb-portrait-3">
+                <img src="portfolio.png" alt="Portfolio Design">
+              </div>
+              <div class="feature-copy">
+                <p class="quote">This project was made in our Web Development class. It is a personal portfolio website showcasing my skills and projects.</p>
+                <p class="cite"><strong>Portfolio</strong></p>
+              </div>
+            </article>
+          </div>
+          <button class="car-arrow car-arrow--right" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="panel panel--dark">
+      <div class="panel-inner contact-grid">
+        <div class="contact-text">
+          <h2 class="mega mega--tight accent-lime">LET'S<br>CONNECT</h2>
+          <p class="body-copy">Teamwork makes the dream work!</p>
+          <ul class="contact-list">
+            <li><span class="icon">✉</span> kjaneahcaliguiran@gmail.com</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit" class="btn-outline">Send</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox-inner" id="lightboxInner"></div>
+</div>
+
+<button class="help-fab" aria-label="Help">?</button>
+
+<script src="script.js"></script>
+</body>
+</html>
